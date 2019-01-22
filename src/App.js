@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
+
+// Asets & styles
 import logo from './logo.svg'
 import './App.css'
+
+// Components
+import mockPictures from './mocks/pictures'
+import Widget from './Widget'
 
 class App extends Component {
   render() {
@@ -20,6 +26,8 @@ class App extends Component {
             {'Check the code on github!'}
           </a>
         </header>
+
+        <Widget pictures={mockPictures} totalCards={mockPictures.length} />
       </div>
     )
   }
