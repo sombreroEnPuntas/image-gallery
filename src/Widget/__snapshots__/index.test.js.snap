@@ -25,7 +25,7 @@ exports[`Widget renders mocks as expected for: Pictures! 1`] = `
           </styled.button>
           <styled.div>
             <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-              <div className=\\"sc-bwzfXH kxWXJw\\">
+              <div className=\\"sc-bwzfXH hsQGxL\\">
                 <styled.span active={true}>
                   <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat gguXpr\\">

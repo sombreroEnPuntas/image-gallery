@@ -11,7 +11,7 @@ export const Cards = styled.div`
   flex-flow: row nowrap;
   height: 220px;
   justify-content: center;
-  width: 50%;
+  width: 500px;
 `
 
 export const Position = styled.span`
