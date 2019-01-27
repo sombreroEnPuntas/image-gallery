@@ -1,5 +1,7 @@
 # Gallery Images Upload
 
+[![Build Status](https://travis-ci.com/sombreroEnPuntas/image-gallery.svg?branch=master)](https://travis-ci.com/sombreroEnPuntas/image-gallery)
+
 - [Challenge](#challenge)
   - [Client side](#client-side)
     - [Web Requirements](#web-requirements)
@@ -9,6 +11,7 @@
   - [`yarn start`](#-yarn-start-)
   - [`yarn test`](#-yarn-test-)
   - [`yarn run build`](#-yarn-run-build-)
+  - [Travis CI & Heroku app](#travis-ci---heroku-app)
 
 ## Challenge
 
@@ -70,3 +73,10 @@ Launches the test runner in the interactive watch mode.<br>
 ### `yarn run build`
 
 Builds the app for production to the `build` folder.<br>
+
+### Travis CI & Heroku app
+
+Every push will trigger a Travis CI job, and on `master` branch it will trigger a Heroku app deploy.
+
+- A job will run tests, and trigger a deploy when passing.
+- Builds triggered from Pull Requests will never trigger a deploy.
