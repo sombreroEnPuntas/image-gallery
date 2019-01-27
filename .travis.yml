@@ -1,13 +1,14 @@
 language: node_js
-
 node_js:
   - 10
-
 cache:
   yarn: true
   directories:
     - node_modules
-
 script:
   - yarn build
   - yarn test
+deploy:
+  app: image-gallery-demo
+  api_key:
+    secure: L0rgUxrq92t/52/L2NvBh1ozKxXWi7Gvxbpp92Fwbt86RCSKx9/T52XMndjIjvURub83qVRlEZyan/voVXpMD6L6mvC0wrykz6j8hZm4G6fULHH/SLV6CYfWQAnY+GIg1Dk/S/Yfeb41EyAoYq2BY3QYt6cXGQ8Wd8JY++VyxgmPVQPEpMiivoSNsBB6QMNkF4CHfzC+ydnKgDBbFPrKghYvoj/4MEjA2SYnPsM01BQk4Je2CPaxFqhM2PbkQK69n9J0qeO658P0mKz9vT+M54V3a5XM3xezleABEgQGaPGsCeiihHwLFeL6mKUkom+Njr8d8CbJVGXKZgpKB00Xcm4Ou1+JeV2gCc/AhNbz3p4B/xAcsMQefGexm3nbuHALKKlhArLagcLneb0Hq03c42Dciw702hBanSqW6K2MwkdOhHi+IAhQmsxQrPv43fHPuaViUyZpgtMUeRNmITvsrYy2zETUlcO5nTK+/B8Myt/0+YE3ks+nsYRNxbN8jocs0q0Al/Dsjc6zxDmcZ49dqx886AHCQPpQ0S5O8airNJV0vO9tZQHB+xRuY+FoHihy7C1DplxvJ3RDh9XVsiUH9hlIcXO67pVXVtANflWxNQ65q+9r73qW79F2AVTNQBsh9ez4pNyxSZujBfg3ZDTDemS4TmGhPhw4cplCpF3Nrvc=
