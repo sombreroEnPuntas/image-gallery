@@ -10,10 +10,10 @@ Try it out on [`Heroku`](https://image-gallery-demo.herokuapp.com/)!
     - [App Requirements](#app-requirements)
   - [Server side](#server-side)
 - [Solution](#solution)
-  - [`yarn start`](#-yarn-start-)
-  - [`yarn test`](#-yarn-test-)
-  - [`yarn run build`](#-yarn-run-build-)
-  - [Travis CI & Heroku app](#travis-ci---heroku-app)
+  - [`yarn dev`](#yarn-dev)
+  - [`yarn test`](#yarn-test)
+  - [`yarn run build`](#yarn-run-build)
+  - [Travis CI & Heroku app](#travis-ci--heroku-app)
 
 ## Challenge
 
@@ -60,7 +60,7 @@ Bootstrapped with [create-react-app](https://github.com/facebook/create-react-ap
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn dev`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -78,7 +78,7 @@ Builds the app for production to the `build` folder.<br>
 
 ### Travis CI & Heroku app
 
-Every push will trigger a Travis CI job, and on `master` branch it will trigger a Heroku app deploy.
+Every push will trigger a **Travis CI** job, and on `master` branch it will trigger a **Heroku** app deploy.
 
 - A job will run tests, and trigger a deploy when passing.
 - Builds triggered from Pull Requests will never trigger a deploy.
