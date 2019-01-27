@@ -3,17 +3,12 @@ import { shallow } from 'enzyme'
 
 import withSpinner from '../Widget/withSpinner'
 
-// Mocks
-import mockPictures from '../mocks/pictures'
-
 const Widget = withSpinner(() => <div>{'Hola!'}</div>)
 
 const getCurrentCard = wrapper => wrapper.state().currentCard
 
 describe('Widget shows behavior for:', () => {
-  const wrapper = shallow(
-    <Widget pictures={mockPictures} totalCards={mockPictures.length} />
-  )
+  const wrapper = shallow(<Widget />)
 
   it('Click back (below 0)...', () => {
     expect(getCurrentCard(wrapper)).toEqual(0)

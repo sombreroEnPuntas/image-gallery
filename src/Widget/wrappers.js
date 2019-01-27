@@ -42,7 +42,7 @@ export const Position = styled.span`
   }
 `
 
-export const Image = styled.img`
+export const ImageEmpty = styled.div`
   background-color: #1cb3ff;
   height: 150px;
   width: 150px;

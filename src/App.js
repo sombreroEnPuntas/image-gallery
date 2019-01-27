@@ -5,7 +5,6 @@ import logo from './logo.svg'
 import './App.css'
 
 // Components
-import mockPictures from './mocks/pictures'
 import Widget from './Widget'
 
 class App extends Component {
@@ -27,7 +26,7 @@ class App extends Component {
           </a>
         </header>
 
-        <Widget pictures={mockPictures} totalCards={mockPictures.length} />
+        <Widget />
       </div>
     )
   }

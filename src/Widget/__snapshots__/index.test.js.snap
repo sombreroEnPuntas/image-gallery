@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Widget renders mocks as expected for: Pictures! 1`] = `
-"<WithSpinner pictures={{...}} totalCards={5} initialCard={0}>
-  <Widget pictures={{...}} totalCards={5} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} onClickToggle={[undefined]} reviews={{...}}>
+exports[`Widget Matches Snapshot 1`] = `
+"<WithSpinner initialCard={0}>
+  <Widget initialCard={0} currentCard={0} mainCardIndex={2} onClickBack={[Function]} onClickNext={[Function]} onClickToggle={[undefined]} totalCards={5} reviews={{...}}>
     <styled.div>
       <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
         <div className=\\"sc-bdVaJa emmSvS\\">
@@ -19,33 +19,38 @@ exports[`Widget renders mocks as expected for: Pictures! 1`] = `
                 <styled.span active={true}>
                   <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat gguXpr\\">
-                      <styled.img src=\\"https://source.unsplash.com/random/150x150?sig=0\\" alt=\\"some description 0\\">
-                        <StyledComponent src=\\"https://source.unsplash.com/random/150x150?sig=0\\" alt=\\"some description 0\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                          <img src=\\"https://source.unsplash.com/random/150x150?sig=0\\" alt=\\"some description 0\\" className=\\"sc-bxivhb jElvlS\\" />
+                      <styled.div>
+                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                          <div className=\\"sc-bxivhb jElvlS\\" />
                         </StyledComponent>
-                      </styled.img>
+                      </styled.div>
                     </span>
                   </StyledComponent>
                 </styled.span>
                 <styled.span active={false}>
                   <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.img src=\\"https://source.unsplash.com/random/150x150?sig=1\\" alt=\\"some description 1\\">
-                        <StyledComponent src=\\"https://source.unsplash.com/random/150x150?sig=1\\" alt=\\"some description 1\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                          <img src=\\"https://source.unsplash.com/random/150x150?sig=1\\" alt=\\"some description 1\\" className=\\"sc-bxivhb jElvlS\\" />
+                      <styled.div>
+                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                          <div className=\\"sc-bxivhb jElvlS\\" />
                         </StyledComponent>
-                      </styled.img>
+                      </styled.div>
                     </span>
                   </StyledComponent>
                 </styled.span>
                 <styled.span active={false}>
                   <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat joeKyc\\">
-                      <DragAndDrop src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"some description 2\\">
-                        <t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=2\\" imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
+                      <DragAndDrop>
+                        <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
                           <div>
                             <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
-                              <img onLoad={[Function]} src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"https://source.unsplash.com/random/150x150?sig=2\\" width={0} height={0} />
+                              <div style={{...}}>
+                                <div style={{...}}>
+                                  Drop Here
+                                  <div />
+                                </div>
+                              </div>
                             </div>
                             <div style={{...}} />
                           </div>
@@ -57,22 +62,22 @@ exports[`Widget renders mocks as expected for: Pictures! 1`] = `
                 <styled.span active={false}>
                   <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.img src=\\"https://source.unsplash.com/random/150x150?sig=3\\" alt=\\"some description 3\\">
-                        <StyledComponent src=\\"https://source.unsplash.com/random/150x150?sig=3\\" alt=\\"some description 3\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                          <img src=\\"https://source.unsplash.com/random/150x150?sig=3\\" alt=\\"some description 3\\" className=\\"sc-bxivhb jElvlS\\" />
+                      <styled.div>
+                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                          <div className=\\"sc-bxivhb jElvlS\\" />
                         </StyledComponent>
-                      </styled.img>
+                      </styled.div>
                     </span>
                   </StyledComponent>
                 </styled.span>
                 <styled.span active={false}>
                   <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.img src=\\"https://source.unsplash.com/random/150x150?sig=4\\" alt=\\"some description 4\\">
-                        <StyledComponent src=\\"https://source.unsplash.com/random/150x150?sig=4\\" alt=\\"some description 4\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                          <img src=\\"https://source.unsplash.com/random/150x150?sig=4\\" alt=\\"some description 4\\" className=\\"sc-bxivhb jElvlS\\" />
+                      <styled.div>
+                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                          <div className=\\"sc-bxivhb jElvlS\\" />
                         </StyledComponent>
-                      </styled.img>
+                      </styled.div>
                     </span>
                   </StyledComponent>
                 </styled.span>
