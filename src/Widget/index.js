@@ -3,26 +3,28 @@ import PropTypes from 'prop-types'
 
 import withSpinner from './withSpinner'
 
+// Components
+import DragAndDrop from '../DragAndDrop'
+
 // Styled
-import { Position, Cards, Container, Button, Image } from './wrappers'
+import { Button, Cards, Container, Image, Position } from './wrappers'
 
 const totalCards = 5
+const mainCardIndex = 2
 
 export class Widget extends Component {
   render() {
-    const { pictures, currentCard, onClickBack, onClickNext } = this.props
-
-    if (pictures.length < 1) {
-      return <div>Loading...</div>
-    }
+    const { currentCard, onClickBack, onClickNext, pictures } = this.props
 
     const cards = []
     let index = 0
 
     for (; index <= totalCards - 1; index++) {
+      const Picture = index === mainCardIndex ? DragAndDrop : Image
+
       cards.push(
         <Position key={`card-${index}`} active={currentCard === index}>
-          <Image src={pictures[index].src} alt={pictures[index].alt} />
+          <Picture src={pictures[index].src} alt={pictures[index].alt} />
         </Position>
       )
     }

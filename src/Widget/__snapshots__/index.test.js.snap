@@ -1,18 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Widget renders mocks as expected for: Loading message... 1`] = `
-"<WithSpinner pictures={{...}} totalCards={0} initialCard={0}>
-  <Widget pictures={{...}} totalCards={0} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} reviews={{...}}>
-    <div>
-      Loading...
-    </div>
-  </Widget>
-</WithSpinner>"
-`;
-
 exports[`Widget renders mocks as expected for: Pictures! 1`] = `
 "<WithSpinner pictures={{...}} totalCards={5} initialCard={0}>
-  <Widget pictures={{...}} totalCards={5} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} reviews={{...}}>
+  <Widget pictures={{...}} totalCards={5} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} onClickToggle={[undefined]} reviews={{...}}>
     <styled.div>
       <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
         <div className=\\"sc-bdVaJa emmSvS\\">
@@ -51,11 +41,16 @@ exports[`Widget renders mocks as expected for: Pictures! 1`] = `
                 <styled.span active={false}>
                   <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
                     <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.img src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"some description 2\\">
-                        <StyledComponent src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"some description 2\\" forwardedComponent={{...}} forwardedRef={{...}}>
-                          <img src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"some description 2\\" className=\\"sc-bxivhb jElvlS\\" />
-                        </StyledComponent>
-                      </styled.img>
+                      <DragAndDrop src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"some description 2\\">
+                        <t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=2\\" imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
+                          <div>
+                            <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                              <img onLoad={[Function]} src=\\"https://source.unsplash.com/random/150x150?sig=2\\" alt=\\"https://source.unsplash.com/random/150x150?sig=2\\" width={0} height={0} />
+                            </div>
+                            <div style={{...}} />
+                          </div>
+                        </t>
+                      </DragAndDrop>
                     </span>
                   </StyledComponent>
                 </styled.span>

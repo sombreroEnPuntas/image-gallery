@@ -7,11 +7,6 @@ import Widget from './'
 import mockPictures from '../mocks/pictures'
 
 describe('Widget renders mocks as expected for:', () => {
-  it('Loading message...', () => {
-    const wrapper = mount(<Widget pictures={[]} totalCards={0} />)
-    expect(wrapper.debug()).toMatchSnapshot()
-  })
-
   it('Pictures!', () => {
     const wrapper = mount(
       <Widget pictures={mockPictures} totalCards={mockPictures.length} />
