@@ -17,25 +17,25 @@ describe('Widget shows behavior for:', () => {
 
   it('Click back (below 0)...', () => {
     expect(getCurrentCard(wrapper)).toEqual(0)
-    wrapper.instance().handleOnClickBack()
+    wrapper.instance().handleClickBack()
     expect(getCurrentCard(wrapper)).toEqual(4)
   })
 
   it('Click next (above max)...', () => {
     expect(getCurrentCard(wrapper)).toEqual(4)
-    wrapper.instance().handleOnClickNext()
+    wrapper.instance().handleClickNext()
     expect(getCurrentCard(wrapper)).toEqual(0)
   })
 
   it('Click next...', () => {
     expect(getCurrentCard(wrapper)).toEqual(0)
-    wrapper.instance().handleOnClickNext()
+    wrapper.instance().handleClickNext()
     expect(getCurrentCard(wrapper)).toEqual(1)
   })
 
   it('Click back...', () => {
     expect(getCurrentCard(wrapper)).toEqual(1)
-    wrapper.instance().handleOnClickBack()
+    wrapper.instance().handleClickBack()
     expect(getCurrentCard(wrapper)).toEqual(0)
   })
 })

@@ -16,7 +16,7 @@ const withSpinner = WrappedComponent =>
       currentCard: this.props.initialCard,
     }
 
-    handleOnClickBack = () => {
+    handleClickBack = () => {
       this.setState(prevState => ({
         currentCard:
           prevState.currentCard > 0
@@ -25,7 +25,7 @@ const withSpinner = WrappedComponent =>
       }))
     }
 
-    handleOnClickNext = () => {
+    handleClickNext = () => {
       this.setState(prevState => ({
         currentCard:
           prevState.currentCard < this.props.totalCards - 1
@@ -36,11 +36,13 @@ const withSpinner = WrappedComponent =>
 
     render() {
       const { ...passThroughProps } = this.props
+      const { currentCard } = this.state
 
       const newProps = {
-        currentCard: this.state.currentCard,
-        onClickBack: this.handleOnClickBack,
-        onClickNext: this.handleOnClickNext,
+        currentCard,
+        onClickBack: this.handleClickBack,
+        onClickNext: this.handleClickNext,
+        onClickToggle: this.handleToggle,
       }
 
       return <WrappedComponent {...passThroughProps} {...newProps} />
