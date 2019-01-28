@@ -1,99 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Widget Matches Snapshot 1`] = `
-"<WithSpinner initialCard={0}>
-  <Widget initialCard={0} currentCard={0} mainCardIndex={2} onClickBack={[Function]} onClickNext={[Function]} onClickToggle={[undefined]} totalCards={5} reviews={{...}}>
-    <styled.div>
-      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-        <div className=\\"sc-bdVaJa emmSvS\\">
-          <styled.button onClick={[Function]}>
-            <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function]} className=\\"sc-ifAKCX gVAEIN\\">
-                &lt;
-              </button>
-            </StyledComponent>
-          </styled.button>
-          <styled.div>
-            <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-              <div className=\\"sc-bwzfXH hsQGxL\\">
-                <styled.span active={true}>
-                  <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <span className=\\"sc-htpNat gguXpr\\">
-                      <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-bxivhb jElvlS\\" />
-                        </StyledComponent>
-                      </styled.div>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.span active={false}>
-                  <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-bxivhb jElvlS\\" />
-                        </StyledComponent>
-                      </styled.div>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.span active={false}>
-                  <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <span className=\\"sc-htpNat joeKyc\\">
-                      <DragAndDrop>
-                        <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
-                          <div>
-                            <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
-                              <div style={{...}}>
+"<WithPictures>
+  <WithSpinner pictures={{...}} addPicture={[Function]} removePicture={[Function]} initialCard={0}>
+    <Widget pictures={{...}} addPicture={[Function]} removePicture={[Function]} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} totalCards={5}>
+      <styled.div>
+        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+          <div className=\\"sc-bdVaJa emmSvS\\">
+            <styled.button onClick={[Function]}>
+              <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
+                <button onClick={[Function]} className=\\"sc-EHOje jtnKXd\\">
+                  &lt;
+                </button>
+              </StyledComponent>
+            </styled.button>
+            <styled.div>
+              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                <div className=\\"sc-bwzfXH hsQGxL\\">
+                  <styled.span active={false}>
+                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                      <span className=\\"sc-htpNat gguXpr\\">
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-ifAKCX iQCKVX\\" />
+                          </StyledComponent>
+                        </styled.div>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                  <styled.span active={false}>
+                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                      <span className=\\"sc-htpNat gguXpr\\">
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-ifAKCX iQCKVX\\" />
+                          </StyledComponent>
+                        </styled.div>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                  <styled.span active={true}>
+                    <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                      <span className=\\"sc-htpNat joeKyc\\">
+                        <DragAndDrop addPicture={[Function]} removePicture={[Function]} src={[undefined]}>
+                          <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
+                            <div>
+                              <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
                                 <div style={{...}}>
-                                  Drop Here
-                                  <div />
+                                  <div style={{...}}>
+                                    Drop Here
+                                    <div />
+                                  </div>
                                 </div>
                               </div>
+                              <div style={{...}} />
                             </div>
-                            <div style={{...}} />
-                          </div>
-                        </t>
-                      </DragAndDrop>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.span active={false}>
-                  <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-bxivhb jElvlS\\" />
-                        </StyledComponent>
-                      </styled.div>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-                <styled.span active={false}>
-                  <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                    <span className=\\"sc-htpNat joeKyc\\">
-                      <styled.div>
-                        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                          <div className=\\"sc-bxivhb jElvlS\\" />
-                        </StyledComponent>
-                      </styled.div>
-                    </span>
-                  </StyledComponent>
-                </styled.span>
-              </div>
-            </StyledComponent>
-          </styled.div>
-          <styled.button onClick={[Function]}>
-            <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
-              <button onClick={[Function]} className=\\"sc-ifAKCX gVAEIN\\">
-                &gt;
-              </button>
-            </StyledComponent>
-          </styled.button>
-        </div>
-      </StyledComponent>
-    </styled.div>
-  </Widget>
-</WithSpinner>"
+                          </t>
+                        </DragAndDrop>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                  <styled.span active={false}>
+                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                      <span className=\\"sc-htpNat gguXpr\\">
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-ifAKCX iQCKVX\\" />
+                          </StyledComponent>
+                        </styled.div>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                  <styled.span active={false}>
+                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                      <span className=\\"sc-htpNat gguXpr\\">
+                        <styled.div>
+                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                            <div className=\\"sc-ifAKCX iQCKVX\\" />
+                          </StyledComponent>
+                        </styled.div>
+                      </span>
+                    </StyledComponent>
+                  </styled.span>
+                </div>
+              </StyledComponent>
+            </styled.div>
+            <styled.button onClick={[Function]}>
+              <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
+                <button onClick={[Function]} className=\\"sc-EHOje jtnKXd\\">
+                  &gt;
+                </button>
+              </StyledComponent>
+            </styled.button>
+          </div>
+        </StyledComponent>
+      </styled.div>
+    </Widget>
+  </WithSpinner>
+</WithPictures>"
 `;

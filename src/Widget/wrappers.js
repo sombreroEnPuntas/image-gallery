@@ -16,7 +16,7 @@ export const Cards = styled.div`
 
 export const Position = styled.span`
   border: ${props =>
-    props.active ? '2px solid black' : '2px solid transparent'};
+    props.active ? '2px solid transparent' : '2px solid black'};
   display: inline-block;
   height: 150px;
   width: 150px;
@@ -40,6 +40,12 @@ export const Position = styled.span`
     transform: rotate(40deg) scale(0.7) translate(-60%, 120%);
     z-index: 0;
   }
+`
+
+export const Image = styled.img`
+  background-color: #1cb3ff;
+  height: 150px;
+  width: 150px;
 `
 
 export const ImageEmpty = styled.div`
