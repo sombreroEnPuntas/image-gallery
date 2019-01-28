@@ -19,7 +19,7 @@ import {
 
 const displayedCards = 5
 
-const Widget = ({
+export const Widget = ({
   addPicture,
   currentCard,
   onClickBack,

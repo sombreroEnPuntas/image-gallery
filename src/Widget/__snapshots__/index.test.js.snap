@@ -1,101 +1,471 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Widget Matches Snapshot 1`] = `
-"<WithPictures>
-  <WithSpinner pictures={{...}} addPicture={[Function]} removePicture={[Function]} initialCard={0}>
-    <Widget pictures={{...}} addPicture={[Function]} removePicture={[Function]} initialCard={0} currentCard={0} onClickBack={[Function]} onClickNext={[Function]} totalCards={5}>
-      <styled.div>
-        <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-          <div className=\\"sc-bdVaJa emmSvS\\">
-            <styled.button onClick={[Function]}>
-              <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
-                <button onClick={[Function]} className=\\"sc-EHOje jtnKXd\\">
-                  &lt;
-                </button>
-              </StyledComponent>
-            </styled.button>
-            <styled.div>
-              <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                <div className=\\"sc-bwzfXH hsQGxL\\">
-                  <styled.span active={false}>
-                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <span className=\\"sc-htpNat gguXpr\\">
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-ifAKCX iQCKVX\\" />
-                          </StyledComponent>
-                        </styled.div>
-                      </span>
-                    </StyledComponent>
-                  </styled.span>
-                  <styled.span active={false}>
-                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <span className=\\"sc-htpNat gguXpr\\">
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-ifAKCX iQCKVX\\" />
-                          </StyledComponent>
-                        </styled.div>
-                      </span>
-                    </StyledComponent>
-                  </styled.span>
-                  <styled.span active={true}>
-                    <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <span className=\\"sc-htpNat joeKyc\\">
-                        <DragAndDrop addPicture={[Function]} removePicture={[Function]} src={[undefined]}>
-                          <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
-                            <div>
-                              <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
-                                <div style={{...}}>
-                                  <div style={{...}}>
-                                    Drop Here
-                                    <div />
-                                  </div>
-                                </div>
+exports[`Widget Matches Snapshot for a card near the end of the list 1`] = `
+"<Widget addPicture={[Function: addPicture]} currentCard={4} onClickBack={[Function: mockConstructor]} onClickNext={[Function: mockConstructor]} pictures={{...}} removePicture={[Function: removePicture]} totalCards={5}>
+  <styled.div>
+    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+      <div className=\\"sc-bdVaJa emmSvS\\">
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &lt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+        <styled.div>
+          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+            <div className=\\"sc-bwzfXH hsQGxL\\">
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={true}>
+                <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat joeKyc\\">
+                    <DragAndDrop addPicture={[Function: mockConstructor]} removePicture={[Function: mockConstructor]} src={[undefined]}>
+                      <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150}>
+                        <div>
+                          <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                            <div style={{...}}>
+                              <div style={{...}}>
+                                Drop Here
+                                <div />
                               </div>
-                              <div style={{...}} />
                             </div>
-                          </t>
-                        </DragAndDrop>
-                      </span>
-                    </StyledComponent>
-                  </styled.span>
-                  <styled.span active={false}>
-                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <span className=\\"sc-htpNat gguXpr\\">
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-ifAKCX iQCKVX\\" />
-                          </StyledComponent>
-                        </styled.div>
-                      </span>
-                    </StyledComponent>
-                  </styled.span>
-                  <styled.span active={false}>
-                    <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
-                      <span className=\\"sc-htpNat gguXpr\\">
-                        <styled.div>
-                          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
-                            <div className=\\"sc-ifAKCX iQCKVX\\" />
-                          </StyledComponent>
-                        </styled.div>
-                      </span>
-                    </StyledComponent>
-                  </styled.span>
-                </div>
-              </StyledComponent>
-            </styled.div>
-            <styled.button onClick={[Function]}>
-              <StyledComponent onClick={[Function]} forwardedComponent={{...}} forwardedRef={{...}}>
-                <button onClick={[Function]} className=\\"sc-EHOje jtnKXd\\">
-                  &gt;
-                </button>
-              </StyledComponent>
-            </styled.button>
-          </div>
-        </StyledComponent>
-      </styled.div>
-    </Widget>
-  </WithSpinner>
-</WithPictures>"
+                          </div>
+                          <div style={{...}} />
+                        </div>
+                      </t>
+                    </DragAndDrop>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &gt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Widget>"
+`;
+
+exports[`Widget Matches Snapshot for a card near the start of the list 1`] = `
+"<Widget addPicture={[Function: addPicture]} currentCard={0} onClickBack={[Function: mockConstructor]} onClickNext={[Function: mockConstructor]} pictures={{...}} removePicture={[Function: removePicture]} totalCards={5}>
+  <styled.div>
+    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+      <div className=\\"sc-bdVaJa emmSvS\\">
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &lt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+        <styled.div>
+          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+            <div className=\\"sc-bwzfXH hsQGxL\\">
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={true}>
+                <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat joeKyc\\">
+                    <DragAndDrop addPicture={[Function: mockConstructor]} removePicture={[Function: mockConstructor]} src={[undefined]}>
+                      <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150}>
+                        <div>
+                          <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                            <div style={{...}}>
+                              <div style={{...}}>
+                                Drop Here
+                                <div />
+                              </div>
+                            </div>
+                          </div>
+                          <div style={{...}} />
+                        </div>
+                      </t>
+                    </DragAndDrop>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &gt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Widget>"
+`;
+
+exports[`Widget Matches Snapshot with a picture uploaded 1`] = `
+"<Widget addPicture={[Function: addPicture]} currentCard={2} onClickBack={[Function: mockConstructor]} onClickNext={[Function: mockConstructor]} pictures={{...}} removePicture={[Function: removePicture]} totalCards={5}>
+  <styled.div>
+    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+      <div className=\\"sc-bdVaJa emmSvS\\">
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &lt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+        <styled.div>
+          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+            <div className=\\"sc-bwzfXH hsQGxL\\">
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={true}>
+                <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat joeKyc\\">
+                    <DragAndDrop addPicture={[Function: mockConstructor]} removePicture={[Function: mockConstructor]} src=\\"blob:http://localhost:3000/some-hash\\">
+                      <t anySize={true} height={150} imageDefault=\\"blob:http://localhost:3000/some-hash\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150}>
+                        <div>
+                          <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                            <img onLoad={[Function]} src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"blob:http://localhost:3000/some-hash\\" width={0} height={0} />
+                          </div>
+                          <div style={{...}} />
+                        </div>
+                      </t>
+                    </DragAndDrop>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &gt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Widget>"
+`;
+
+exports[`Widget Matches Snapshot with all pictures uploaded 1`] = `
+"<Widget addPicture={[Function: addPicture]} currentCard={2} onClickBack={[Function: mockConstructor]} onClickNext={[Function: mockConstructor]} pictures={{...}} removePicture={[Function: removePicture]} totalCards={5}>
+  <styled.div>
+    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+      <div className=\\"sc-bdVaJa emmSvS\\">
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &lt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+        <styled.div>
+          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+            <div className=\\"sc-bwzfXH hsQGxL\\">
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 1\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 1\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 1\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 2\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={true}>
+                <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat joeKyc\\">
+                    <DragAndDrop addPicture={[Function: mockConstructor]} removePicture={[Function: mockConstructor]} src=\\"blob:http://localhost:3000/some-hash\\">
+                      <t anySize={true} height={150} imageDefault=\\"blob:http://localhost:3000/some-hash\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150}>
+                        <div>
+                          <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                            <img onLoad={[Function]} src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"blob:http://localhost:3000/some-hash\\" width={0} height={0} />
+                          </div>
+                          <div style={{...}} />
+                        </div>
+                      </t>
+                    </DragAndDrop>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 4\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 5\\">
+                      <StyledComponent src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 5\\" forwardedComponent={{...}} forwardedRef={{...}}>
+                        <img src=\\"blob:http://localhost:3000/some-hash\\" alt=\\"Picture 5\\" className=\\"sc-bxivhb jElvlS\\" />
+                      </StyledComponent>
+                    </styled.img>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &gt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Widget>"
+`;
+
+exports[`Widget Matches Snapshot with no pictures 1`] = `
+"<Widget addPicture={[Function: addPicture]} currentCard={0} onClickBack={[Function: mockConstructor]} onClickNext={[Function: mockConstructor]} pictures={{...}} removePicture={[Function: removePicture]} totalCards={5}>
+  <styled.div>
+    <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+      <div className=\\"sc-bdVaJa emmSvS\\">
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &lt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+        <styled.div>
+          <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+            <div className=\\"sc-bwzfXH hsQGxL\\">
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={true}>
+                <StyledComponent active={true} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat joeKyc\\">
+                    <DragAndDrop addPicture={[Function: mockConstructor]} removePicture={[Function: mockConstructor]} src={[undefined]}>
+                      <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150}>
+                        <div>
+                          <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
+                            <div style={{...}}>
+                              <div style={{...}}>
+                                Drop Here
+                                <div />
+                              </div>
+                            </div>
+                          </div>
+                          <div style={{...}} />
+                        </div>
+                      </t>
+                    </DragAndDrop>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+              <styled.span active={false}>
+                <StyledComponent active={false} forwardedComponent={{...}} forwardedRef={{...}}>
+                  <span className=\\"sc-htpNat gguXpr\\">
+                    <styled.div>
+                      <StyledComponent forwardedComponent={{...}} forwardedRef={{...}}>
+                        <div className=\\"sc-ifAKCX iQCKVX\\" />
+                      </StyledComponent>
+                    </styled.div>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.button onClick={[Function: mockConstructor]}>
+          <StyledComponent onClick={[Function: mockConstructor]} forwardedComponent={{...}} forwardedRef={{...}}>
+            <button onClick={[Function: mockConstructor]} className=\\"sc-EHOje jtnKXd\\">
+              &gt;
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </div>
+    </StyledComponent>
+  </styled.div>
+</Widget>"
 `;

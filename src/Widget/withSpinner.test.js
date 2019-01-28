@@ -7,7 +7,7 @@ const Widget = withSpinner(() => <div>{'Hola!'}</div>)
 
 const getCurrentCard = wrapper => wrapper.state().currentCard
 
-describe('Widget shows behavior for:', () => {
+describe('Widget shows behavior for spinner handles:', () => {
   const wrapper = shallow(<Widget />)
 
   it('Click back (below 0)...', () => {
