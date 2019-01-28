@@ -1,32 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DragAndDrop renders mocks as expected for: Pictures! 1`] = `
-"<DragAndDrop src=\\"https://source.unsplash.com/random/150x150?sig=0\\">
-  <t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=0\\" imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
-    <div>
-      <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
-        <img onLoad={[Function]} src=\\"https://source.unsplash.com/random/150x150?sig=0\\" alt=\\"https://source.unsplash.com/random/150x150?sig=0\\" width={0} height={0} />
-      </div>
-      <div style={{...}} />
-    </div>
-  </t>
-</DragAndDrop>"
-`;
+exports[`DragAndDrop renders mocks as expected for: Pictures! 1`] = `"<t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=0\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150} />"`;
 
-exports[`DragAndDrop rendersempty 1`] = `
-"<DragAndDrop>
-  <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function]} imagePicked={[Function]} style={{...}} width={150}>
-    <div>
-      <div onDrop={[Function]} onDragOver={[Function]} onDragLeave={[Function]} onDragEnter={[Function]} style={{...}}>
-        <div style={{...}}>
-          <div style={{...}}>
-            Drop Here
-            <div />
-          </div>
-        </div>
-      </div>
-      <div style={{...}} />
-    </div>
-  </t>
-</DragAndDrop>"
-`;
+exports[`DragAndDrop rendersempty 1`] = `"<t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150} />"`;
