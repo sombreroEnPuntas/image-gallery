@@ -1,5 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DragAndDrop renders mocks as expected for: Pictures! 1`] = `"<t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=0\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150} />"`;
+exports[`DragAndDrop on desktop with pic renders empty 1`] = `
+"<Fragment>
+  <t anySize={true} height={300} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} showButton={true} showDeleteButton={true} width={300} />
+</Fragment>"
+`;
 
-exports[`DragAndDrop rendersempty 1`] = `"<t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} style={{...}} width={150} />"`;
+exports[`DragAndDrop on desktop with pic renders mocks as expected for: Pictures! 1`] = `
+"<Fragment>
+  <t anySize={true} height={300} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=0\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} showButton={true} showDeleteButton={true} width={300} />
+  <styled.button onClick={[Function: clickRemove]}>
+    X
+  </styled.button>
+</Fragment>"
+`;
+
+exports[`DragAndDrop on mobile with mo pic renders empty 1`] = `
+"<Fragment>
+  <t anySize={true} height={150} imageDefault={[undefined]} imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} showButton={true} showDeleteButton={true} width={150} />
+  <styled.button onClick={[Function: clickAdd]}>
+    +
+  </styled.button>
+</Fragment>"
+`;
+
+exports[`DragAndDrop on mobile with pic renders mocks as expected for: Pictures! 1`] = `
+"<Fragment>
+  <t anySize={true} height={150} imageDefault=\\"https://source.unsplash.com/random/150x150?sig=0\\" imageDeleted={[Function: mockConstructor]} imagePicked={[Function: mockConstructor]} showButton={true} showDeleteButton={true} width={150} />
+  <styled.button onClick={[Function: clickRemove]}>
+    X
+  </styled.button>
+</Fragment>"
+`;

@@ -1,22 +1,54 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 // Library Components
 import ImageDropZone from 'react-image-dropzone'
 
-const DragAndDrop = ({ addPicture, removePicture, src }) => (
-  <ImageDropZone
-    anySize
-    height={150}
-    imageDefault={src}
-    imageDeleted={removePicture}
-    imagePicked={addPicture}
-    // showButton
-    // showDeleteButton
-    style={{ width: '150px', height: '150px' }}
-    width={150}
-  />
-)
+// Utils
+import isMobile from '../utils/isMobile'
+
+// Styled
+import { Button } from './wrappers'
+
+import {
+  cardSizeBigerInPixels,
+  cardSizeSmallInPixels,
+  mobileBreakpointInPixels,
+} from '../data/constants'
+
+// No need to test library functionality, or browser functionality!
+/* istanbul ignore next */
+const clickAdd = () =>
+  // eslint-disable-next-line no-undef
+  document.getElementsByClassName('button-container')[0].children[0].click()
+
+/* istanbul ignore next */
+const clickRemove = () =>
+  // eslint-disable-next-line no-undef
+  document.getElementsByClassName('button-container')[1].children[0].click()
+
+const DragAndDrop = ({ addPicture, removePicture, src }) => {
+  const isMobileView = isMobile(mobileBreakpointInPixels)
+  const size = isMobileView ? cardSizeSmallInPixels : cardSizeBigerInPixels
+  const label = src ? 'X' : '+'
+  const action = src ? clickRemove : clickAdd
+
+  return (
+    <Fragment>
+      <ImageDropZone
+        anySize
+        height={size}
+        imageDefault={src}
+        imageDeleted={removePicture}
+        imagePicked={addPicture}
+        showButton
+        showDeleteButton
+        width={size}
+      />
+      {(isMobileView || src) && <Button onClick={action}>{label}</Button>}
+    </Fragment>
+  )
+}
 
 DragAndDrop.propTypes = {
   addPicture: PropTypes.func.isRequired,
