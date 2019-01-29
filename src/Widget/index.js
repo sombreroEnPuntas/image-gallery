@@ -1,55 +1,80 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import withSpinner from './withSpinner'
+import withPictures from './withPictures'
+
+// Components
+import DragAndDrop from '../DragAndDrop'
 
 // Styled
-import { Position, Cards, Container, Button, Image } from './wrappers'
+import {
+  Button,
+  Cards,
+  Container,
+  Image,
+  ImageEmpty,
+  Position,
+} from './wrappers'
 
-const totalCards = 5
+const displayedCards = 5
 
-export class Widget extends Component {
-  render() {
-    const { pictures, currentCard, onClickBack, onClickNext } = this.props
+export const Widget = ({
+  addPicture,
+  currentCard,
+  onClickBack,
+  onClickNext,
+  pictures,
+  removePicture,
+  totalCards,
+}) => {
+  const cards = []
+  const halfCards = Math.floor(displayedCards / 2)
+  let index = -halfCards
 
-    if (pictures.length < 1) {
-      return <div>Loading...</div>
-    }
+  for (; index <= halfCards; index++) {
+    let key = currentCard + index
+    if (key < 0) key = key + totalCards
+    if (key >= totalCards) key = key - totalCards
 
-    const cards = []
-    let index = 0
-
-    for (; index <= totalCards - 1; index++) {
-      cards.push(
-        <Position key={`card-${index}`} active={currentCard === index}>
-          <Image src={pictures[index].src} alt={pictures[index].alt} />
-        </Position>
-      )
-    }
-
-    return (
-      <Container>
-        <Button onClick={onClickBack}>&lt;</Button>
-
-        <Cards>{cards}</Cards>
-
-        <Button onClick={onClickNext}>&gt;</Button>
-      </Container>
+    cards.push(
+      <Position key={`card-${index}-${pictures[key]}`} active={index === 0}>
+        {index === 0 ? (
+          <DragAndDrop
+            addPicture={addPicture(key)}
+            removePicture={removePicture(key)}
+            src={pictures[key]}
+          />
+        ) : pictures[key] ? (
+          <Image src={pictures[key]} alt={`Picture ${key + 1}`} />
+        ) : (
+          <ImageEmpty />
+        )}
+      </Position>
     )
   }
+
+  return (
+    <Container>
+      <Button onClick={onClickBack}>&lt;</Button>
+
+      <Cards>{cards}</Cards>
+
+      <Button onClick={onClickNext}>&gt;</Button>
+    </Container>
+  )
 }
 
 Widget.propTypes = {
-  pictures: PropTypes.arrayOf(
-    PropTypes.shape({ alt: PropTypes.string, src: PropTypes.string })
-  ),
+  addPicture: PropTypes.func.isRequired,
   currentCard: PropTypes.number.isRequired,
   onClickBack: PropTypes.func.isRequired,
   onClickNext: PropTypes.func.isRequired,
+  pictures: PropTypes.object,
+  removePicture: PropTypes.func.isRequired,
+  totalCards: PropTypes.number.isRequired,
 }
 
-Widget.defaultProps = {
-  reviews: [],
-}
+Widget.defaultProps = {}
 
-export default withSpinner(Widget)
+export default withPictures(withSpinner(Widget))

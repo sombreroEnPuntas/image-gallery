@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+const totalCards = 5
+
 const withSpinner = WrappedComponent =>
   class WithSpinner extends Component {
     static propTypes = {
-      totalCards: PropTypes.number.isRequired,
       initialCard: PropTypes.number.isRequired,
     }
 
@@ -16,19 +17,19 @@ const withSpinner = WrappedComponent =>
       currentCard: this.props.initialCard,
     }
 
-    handleOnClickBack = () => {
+    handleClickBack = () => {
       this.setState(prevState => ({
         currentCard:
           prevState.currentCard > 0
             ? prevState.currentCard - 1
-            : this.props.totalCards - 1,
+            : totalCards - 1,
       }))
     }
 
-    handleOnClickNext = () => {
+    handleClickNext = () => {
       this.setState(prevState => ({
         currentCard:
-          prevState.currentCard < this.props.totalCards - 1
+          prevState.currentCard < totalCards - 1
             ? prevState.currentCard + 1
             : 0,
       }))
@@ -36,11 +37,13 @@ const withSpinner = WrappedComponent =>
 
     render() {
       const { ...passThroughProps } = this.props
+      const { currentCard } = this.state
 
       const newProps = {
-        currentCard: this.state.currentCard,
-        onClickBack: this.handleOnClickBack,
-        onClickNext: this.handleOnClickNext,
+        currentCard,
+        onClickBack: this.handleClickBack,
+        onClickNext: this.handleClickNext,
+        totalCards,
       }
 
       return <WrappedComponent {...passThroughProps} {...newProps} />

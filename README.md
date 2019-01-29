@@ -10,7 +10,7 @@ Try it out on [`Heroku`](https://image-gallery-demo.herokuapp.com/)!
     - [App Requirements](#app-requirements)
   - [Server side](#server-side)
 - [Solution](#solution)
-  - [`yarn dev`](#yarn-dev)
+  - [`yarn start-dev`](#yarn-start-dev)
   - [`yarn test`](#yarn-test)
   - [`yarn run build`](#yarn-run-build)
   - [Travis CI & Heroku app](#travis-ci--heroku-app)
@@ -60,7 +60,7 @@ Bootstrapped with [create-react-app](https://github.com/facebook/create-react-ap
 
 In the project directory, you can run:
 
-### `yarn dev`
+### `yarn start-dev`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
