@@ -64,7 +64,8 @@
       }
     },
     "coverageReporters": [
-      "text"
+      "text",
+      "lcov"
     ]
   },
   "browserslist": [
