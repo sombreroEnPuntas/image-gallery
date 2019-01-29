@@ -1,11 +1,15 @@
 language: node_js
 node_js:
   - 10
+install:
+  - npm install -g codecov
 cache:
   yarn: true
   directories:
     - node_modules
 script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+  - codecov
   - yarn build
   - yarn test
 deploy:
