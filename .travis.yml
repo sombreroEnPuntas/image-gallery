@@ -10,7 +10,7 @@ cache:
 script:
   - yarn build
   - yarn test
-  - codecov coverage/lcov.info
+  - codecov coverage/lcov.info --disable=gcov
 deploy:
   provider: heroku
   app: image-gallery-demo
