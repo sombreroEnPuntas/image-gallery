@@ -3,6 +3,8 @@
 Try it out on [`Heroku`](https://image-gallery-demo.herokuapp.com/)!
 
 [![Build Status](https://travis-ci.com/sombreroEnPuntas/image-gallery.svg?branch=master)](https://travis-ci.com/sombreroEnPuntas/image-gallery)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5947d437b074caa03a3b/maintainability)](https://codeclimate.com/github/sombreroEnPuntas/image-gallery/maintainability)
+[![codecov](https://codecov.io/gh/sombreroEnPuntas/image-gallery/branch/master/graph/badge.svg)](https://codecov.io/gh/sombreroEnPuntas/image-gallery)
 
 - [Challenge](#challenge)
   - [Client side](#client-side)
