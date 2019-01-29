@@ -20,63 +20,26 @@ const getProps = customProps => ({
 })
 
 describe('DragAndDrop', () => {
-  describe('on mobile', () => {
-    resizeScreen(320)
+  describe.each`
+    size   | pic                    | buttonLabel
+    ${320} | ${mockPictures[0].src} | ${'X'}
+    ${768} | ${mockPictures[0].src} | ${'X'}
+    ${320} | ${undefined}           | ${'+'}
+    ${768} | ${undefined}           | ${false}
+  `('at $size', ({ size, pic, buttonLabel }) => {
+    resizeScreen(size)
+    const wrapper = shallow(
+      <DragAndDrop {...getProps(pic ? { src: mockPictures[0].src } : {})} />
+    )
 
-    describe('with pic', () => {
-      const wrapper = shallow(
-        <DragAndDrop {...getProps({ src: mockPictures[0].src })} />
-      )
-
-      it('renders mocks as expected for: Pictures!', () => {
-        expect(wrapper.debug()).toMatchSnapshot()
-      })
-
-      it('Has removal button', () => {
-        expect(wrapper.find(Button).text()).toBe('X')
-      })
+    it(`renders ${pic ? 'mock as expected for: Pictures!' : 'empty'}`, () => {
+      expect(wrapper.debug()).toMatchSnapshot()
     })
 
-    describe('with mo pic', () => {
-      const wrapper = shallow(<DragAndDrop {...getProps()} />)
-
-      it('renders empty', () => {
-        expect(wrapper.debug()).toMatchSnapshot()
-      })
-
-      it('Has add button', () => {
-        expect(wrapper.find(Button).text()).toBe('+')
-      })
-    })
-  })
-
-  describe('on desktop', () => {
-    resizeScreen(768)
-
-    describe('with pic', () => {
-      const wrapper = shallow(
-        <DragAndDrop {...getProps({ src: mockPictures[0].src })} />
-      )
-
-      it('renders mocks as expected for: Pictures!', () => {
-        expect(wrapper.debug()).toMatchSnapshot()
-      })
-
-      it('Has removal button', () => {
-        expect(wrapper.find(Button).text()).toBe('X')
-      })
-    })
-
-    describe('with pic', () => {
-      const wrapper = shallow(<DragAndDrop {...getProps()} />)
-
-      it('renders empty', () => {
-        expect(wrapper.debug()).toMatchSnapshot()
-      })
-
-      it('Has no add button', () => {
-        expect(wrapper.find(Button).length).toBe(0)
-      })
+    it(`Has ${buttonLabel} button`, () => {
+      buttonLabel
+        ? expect(wrapper.find(Button).text()).toBe(buttonLabel)
+        : expect(wrapper.find(Button).length).toBe(0)
     })
   })
 })
